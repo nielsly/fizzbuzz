@@ -29,6 +29,11 @@ for i in range(1,101):print((i%3<1)*'fizz'+(i%5<1)*'buzz'or i)
 fizzbuzz in 62 characters in python
 
 ```python3
-for i in range(1,101):print(i%3//2*'fizz'+i%5//4*'buzz'or i)
+for i in range(100):print(i%3//2*'fizz'+i%5//4*'buzz'or i+1)
 ```
 fizzbuzz in 60 characters in python
+
+```python3
+for i in range(100):print(i%3//2*'fizz'+i%5//4*'buzz'or-~i)
+```
+fizzbuzz in 59 characters in python (thanks to my friend Johannes for pointing this one out)
