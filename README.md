@@ -8,9 +8,9 @@ for($i=0;$i<101;)echo(''==($x=(++$i%3?'':'fizz').($i%5?'':'buzz'))?$i:$x)."\n";
 fizzbuzz with trailing spaces in php in 79 characters
 
 ```php
-function fizzbuzz($n) {for($i=0;$i<$n;)echo(''==($x=(++$i%3?'':'fizz').($i%5?'':'buzz'))?$i:$x).($i==$n?'':"\n");}
+function fizzbuzz($n){for($i=0;$i<$n;)echo(''==($x=(++$i%3?'':'fizz').($i%5?'':'buzz'))?$i:$x).($i==$n?'':"\n");}
 ```
-fizzbuzz function without trailing spaces in php in 114 characters
+fizzbuzz function without trailing spaces in php in 113 characters
 
 ## Python 3:
 ```python3
