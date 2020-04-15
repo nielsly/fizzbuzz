@@ -3,14 +3,19 @@ Shortest fizzbuzzes I've been able to make
 
 ## PHP:
 ```php
-for($i=0;$i<101;)echo(''==($x=(++$i%3?'':'fizz').($i%5?'':'buzz'))?$i:$x)."\n";
+for($i=0;$i<100;)echo''==($x=(++$i%3?'':'fizz').($i%5?'':'buzz'))?$i:$x,"\n"
 ```
-fizzbuzz with trailing spaces in php in 79 characters
+fizzbuzz in php in 76 characters
 
 ```php
-function fizzbuzz($n){for($i=0;$i<$n;)echo(''==($x=(++$i%3?'':'fizz').($i%5?'':'buzz'))?$i:$x).($i==$n?'':"\n");}
+for($i=0;$i<100;)echo$x=(++$i%3?'':'fizz').($i%5?'':'buzz')?:$i,"\n"
 ```
-fizzbuzz function without trailing spaces in php in 113 characters
+fizzbuzz in php in 68 characters
+
+```php
+for(;$i<100;)echo$x=(++$i%3?'':fizz).($i%5?'':buzz)?:$i,"\n"
+```
+fizzbuzz in php in 60 characters, ignoring PHP warnings
 
 ## Python 3:
 ```python3
@@ -37,3 +42,9 @@ fizzbuzz in 60 characters in python
 for i in range(100):print(i%3//2*'fizz'+i%5//4*'buzz'or-~i)
 ```
 fizzbuzz in 59 characters in python (thanks to my friend Johannes for pointing this one out)
+
+```python3
+i=0
+while i<100:print(i%3//2*'fizz'+i%5//4*'buzz'or-~i);i+=1
+```
+fizzbuzz in 60 characters in python in 2 lines
